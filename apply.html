@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Application Form</title>
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!--GenAI acknowledgement: page structure, wireframe and CSS drafted with
+        the assistance of Claude (Anthropic). Content, job details and final
+        edits reviewed and adapted by the group. -->
+
+    <!-- Embedded CSS example -->
+    <style>
+        .form-container h1 {
+            color: #1d5f2b;
+            text-align: center;
+            border-bottom: 3px solid #206d4d;
+            padding-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="container header-flex">
+          <div class="branding">
+              <img src="image/Huge.png"
+                    alt="HuGe Financial Technologies logo"
+                    class="logo" />
+              <div>
+                  <h1>HuGe Financial Technologies</h1>
+                  <p class="tagline">Huge Goals. Huge Growth. HuGe.</p>
+              </div>
+          </div>
+          <!-- Navigation -->
+          <nav aria-label="Main navigation">
+              <ul class="nav-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="Job.html">Jobs</a></li>
+                  <li><a href="apply.html" aria-current="page">Apply</a></li>
+                  <li><a href="about.html">About</a></li>
+              </ul>
+          </nav>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <div class="form-container">
+
+            <h1>HuGe Financial Technologies Job Application Form</h1>
+
+
+            <!-- Send data to -->
+            <form action="https://mercury.swin.edu.au/it000000/formtest.php"
+                  method="POST"
+                  class="application-form">
+
+
+                <!-- JRN code -->
+                <div class="form-group">
+
+                    <label for="jobRef">
+                        Job reference number:
+                        <span class="required">*</span>
+                    </label>
+
+                    <input type="text"
+                           id="jobRef"
+                           name="jobRef"
+                           pattern="[A-Za-z0-9]{6}"
+                           title="Must be exactly 6 alphanumeric characters"
+                           maxlength="6"
+                           placeholder="e.g. ABC123"
+                           required>
+
+                    <small class="hint">
+                        Exactly 6 alphanumeric characters
+                    </small>
+
+                </div>
+
+
+                <!-- Name Fields, 20 max characters -->
+                <div class="form-row name-row">
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            First name:
+                            <span class="required">*</span>
+                        </label>
+
+                        <input type="text"
+                               id="firstName"
+                               name="firstName"
+                               pattern="[A-Za-z]{1,20}"
+                               title="Maximum 20 alphabetic characters, no numbers or special characters"
+                               maxlength="20"
+                               placeholder="e.g. John"
+                               required>
+
+                        <small class="hint">
+                            Max 20 alpha characters
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="lastName">
+                            Last name:
+                            <span class="required">*</span>
+                        </label>
+
+                        <input type="text"
+                               id="lastName"
+                               name="lastName"
+                               pattern="[A-Za-z]{1,20}"
+                               title="Maximum 20 alphabetic characters, no numbers or special characters"
+                               maxlength="20"
+                               placeholder="e.g. Smith"
+                               required>
+
+                        <small class="hint">
+                            Max 20 alpha characters
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Gender + Date Of Birth -->
+                <div class="form-row dob-gender-row">
+
+
+                    <div class="form-group">
+
+                        <label for="dob">
+                            Date of birth:
+                            <span class="required">*</span>
+                        </label>
+
+                        <input type="text"
+                               id="dob"
+                               name="dob"
+                               placeholder="dd/mm/yyyy"
+                               pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/(19|20)\d\d"
+                               title="Please enter date in dd/mm/yyyy format"
+                               required>
+
+                        <small class="hint">
+                            Format: dd/mm/yyyy
+                        </small>
+
+                    </div>
+
+
+                    <fieldset class="form-group gender-group">
+
+                        <legend>
+                            Gender:
+                            <span class="required">*</span>
+                        </legend>
+
+
+                        <div class="radio-group">
+
+
+                            <div class="radio-option">
+
+                                <input type="radio"
+                                       id="male"
+                                       name="gender"
+                                       value="male"
+                                       required>
+
+                                <label for="male">
+                                    Male
+                                </label>
+
+                            </div>
+
+
+                            <div class="radio-option">
+
+                                <input type="radio"
+                                       id="female"
+                                       name="gender"
+                                       value="female">
+
+                                <label for="female">
+                                    Female
+                                </label>
+
+                            </div>
+
+
+                            <div class="radio-option">
+
+                                <input type="radio"
+                                       id="other"
+                                       name="gender"
+                                       value="other">
+
+                                <label for="other">
+                                    Other
+                                </label>
+
+                            </div>
+
+
+                            <div class="radio-option">
+
+                                <input type="radio"
+                                       id="preferNot"
+                                       name="gender"
+                                       value="prefer-not">
+
+                                <label for="preferNot">
+                                    Prefer not to say
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Optional field for people selecting Other -->
+                        <div class="form-group">
+
+                            <label for="genderDescription">
+                                If Other, please specify:
+                            </label>
+
+                            <input type="text"
+                                   id="genderDescription"
+                                   name="genderDescription"
+                                   maxlength="30"
+                                   placeholder="Optional">
+
+                        </div>
+
+                    </fieldset>
+
+                </div>
+
+
+                <!-- Address -->
+                <div class="form-group">
+
+                    <label for="street">
+                        Street Address:
+                        <span class="required">*</span>
+                    </label>
+
+                    <input type="text"
+                           id="street"
+                           name="street"
+                           maxlength="40"
+                           placeholder="e.g. 236 Glenferrie Rd"
+                           required>
+
+                    <small class="hint">
+                        Max 40 characters
+                    </small>
+
+                </div>
+
+
+                <!-- Suburb and state -->
+                <div class="form-row suburb-state-row">
+
+
+                    <div class="form-group">
+
+                        <label for="suburb">
+                            Suburb/Town:
+                            <span class="required">*</span>
+                        </label>
+
+                        <input type="text"
+                               id="suburb"
+                               name="suburb"
+                               maxlength="40"
+                               placeholder="e.g. Hawthorn"
+                               required>
+
+                        <small class="hint">
+                            Max 40 characters
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="state">
+                            State:
+                            <span class="required">*</span>
+                        </label>
+
+                        <select id="state"
+                                name="state"
+                                required>
+
+                            <option value="">Select State</option>
+
+                            <option value="VIC">VIC</option>
+                            <option value="NSW">NSW</option>
+                            <option value="QLD">QLD</option>
+                            <option value="NT">NT</option>
+                            <option value="WA">WA</option>
+                            <option value="SA">SA</option>
+                            <option value="TAS">TAS</option>
+                            <option value="ACT">ACT</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Postcode -->
+                <div class="form-group">
+
+                    <label for="postcode">
+                        Postcode:
+                        <span class="required">*</span>
+                    </label>
+
+                    <input type="text"
+                           id="postcode"
+                           name="postcode"
+                           pattern="\d{4}"
+                           title="Please enter exactly 4 digits"
+                           maxlength="4"
+                           placeholder="e.g. 3122"
+                           required>
+
+                    <small class="hint">
+                        Exactly 4 digits
+                    </small>
+
+                </div>
+
+
+                <!-- Email Address -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email address:
+                        <span class="required">*</span>
+                    </label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="e.g. 106511359@student.swin.edu.au"
+                           required>
+
+                    <small class="hint">
+                        Enter a valid email address
+                    </small>
+
+                </div>
+
+
+                <!-- Phone Num -->
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone number:
+                        <span class="required">*</span>
+                    </label>
+
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           pattern="[0-9\s\-\(\)]{8,12}"
+                           title="Please enter 8-12 digits (spaces, hyphens, and parentheses allowed)"
+                           minlength="8"
+                           maxlength="12"
+                           placeholder="e.g. 0480232865"
+                           required>
+
+                    <small class="hint">
+                        8-12 digits (spaces and hyphens allowed)
+                    </small>
+
+                </div>
+
+
+                <!-- Checkboxes -->
+                <fieldset class="form-group skills-group">
+
+                    <legend>
+                        Skills:
+                        <span class="required">*</span>
+                    </legend>
+
+
+                    <div class="checkbox-grid">
+
+
+                        <div class="checkbox-option">
+
+                            <input type="checkbox"
+                                   id="html"
+                                   name="skills[]"
+                                   value="html">
+
+                            <label for="html">
+                                HTML
+                            </label>
+
+                        </div>
+
+
+                        <div class="checkbox-option">
+
+                            <input type="checkbox"
+                                   id="css"
+                                   name="skills[]"
+                                   value="css">
+
+                            <label for="css">
+                                CSS
+                            </label>
+
+                        </div>
+
+
+                        <div class="checkbox-option">
+
+                            <input type="checkbox"
+                                   id="javascript"
+                                   name="skills[]"
+                                   value="javascript">
+
+                            <label for="javascript">
+                                JavaScript
+                            </label>
+
+                        </div>
+
+
+                        <div class="checkbox-option">
+
+                            <input type="checkbox"
+                                   id="php"
+                                   name="skills[]"
+                                   value="php">
+
+                            <label for="php">
+                                PHP
+                            </label>
+
+                        </div>
+
+
+                        <div class="checkbox-option">
+
+                            <input type="checkbox"
+                                   id="python"
+                                   name="skills[]"
+                                   value="python">
+
+                            <label for="python">
+                                Python
+                            </label>
+
+                        </div>
+
+
+                        <div class="checkbox-option">
+
+                            <input type="checkbox"
+                                   id="sql"
+                                   name="skills[]"
+                                   value="sql">
+
+                            <label for="sql">
+                                SQL
+                            </label>
+
+                        </div>
+
+
+                        <div class="checkbox-option">
+
+                            <input type="checkbox"
+                                   id="java"
+                                   name="skills[]"
+                                   value="java">
+
+                            <label for="java">
+                                Java
+                            </label>
+
+                        </div>
+
+
+                        <div class="checkbox-option">
+
+                            <input type="checkbox"
+                                   id="csharp"
+                                   name="skills[]"
+                                   value="csharp">
+
+                            <label for="csharp">
+                                C#
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- self reminder: make other skills not required -->
+                <div class="form-group">
+
+                    <label for="otherSkills">
+                        Other skills:
+                    </label>
+
+                    <textarea id="otherSkills"
+                              name="otherSkills"
+                              rows="4"
+                              placeholder="Please list any additional skills or qualifications"></textarea>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="form-group submit-group">
+
+                    <button type="submit"
+                            class="submit-btn">
+                        Submit Application
+                    </button>
+
+                    <button type="reset"
+                            class="reset-btn">
+                        Clear Form
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <!-- Company -->
+            <section>
+                <h2>HuGe</h2>
+                <p>
+                    HuGe Financial Technologies creates secure and
+                    user-friendly digital financial solutions.
+                </p>
+            </section>
+            <!-- Project Links -->
+            <section>
+                <h2>Project Links</h2>
+                <ul class="footer-links">
+                    <li>
+                        <a href="https://loolsinhak.atlassian.net/jira/software/projects/HUGE/boards/36?filter=&groupBy=none&atlOrigin=eyJpIjoiY2U0YTI4OTQyZjMxNDU3YTk3YmVjM2NkNTJiMGJhMjkiLCJwIjoiaiJ9" target="_blank" rel="noopener">Jira Project</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/106637569/HuGe" target="_blank" rel="noopene">GitHub Repository</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- Contact Details -->
+            <section>
+                <h2>Contact Details</h2>
+                <ul class="footer-links">
+                    <li>
+                        <a href="mailto:info@hugefintech.com">info@hugefintech .com</a>
+                    </li>
+                    <li>
+                        Melbourne, Australia
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <p class="footer-copy">
+            &copy; 2026 HuGe Financial Technologies. All rights reserved.
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

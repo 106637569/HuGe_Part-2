@@ -1,0 +1,1048 @@
+/* =========================================
+   HuGe Financial Technologies
+   Shared stylesheet for all pages
+   ========================================= */
+
+
+/* =========================================
+   1. General website styles
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f8fb;
+    color: #1f2d3d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #0b5c3b;
+}
+
+a:hover {
+    color: #168c59;
+}
+
+.container,
+.wrap {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 2em 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #0b2c5f;
+}
+
+h2 {
+    margin-top: 1.5em;
+}
+
+
+/* =========================================
+   2. Header
+   Used for all pages
+   ========================================= */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #d9e2ec;
+    padding: 1em 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.branding h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #0b2c5f;
+}
+
+.tagline {
+    margin: 0.2em 0 0;
+    color: #168c59;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   3. Navigation
+   ========================================= */
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5em;
+}
+
+.nav-menu a {
+    display: block;
+    text-decoration: none;
+    color: #0b2c5f;
+    font-weight: bold;
+    padding: 0.6em 0.9em;
+    border-radius: 6px;
+}
+
+.nav-menu a:hover,
+.nav-menu a[aria-current="page"] {
+    background-color: #168c59;
+    color: #ffffff;
+}
+
+/* =========================================
+   4. Home page
+   ========================================= */
+
+.page-intro {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.page-intro h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+
+/* CSS background graphic required for index.html */
+
+.home-section {
+    padding: 2em 0;
+
+    background-image:
+        radial-gradient(circle at 90% 20%, rgba(22, 140, 89, 0.12) 0 80px, transparent 81px),
+        radial-gradient(circle at 5% 90%, rgba(11, 44, 95, 0.08) 0 100px, transparent 101px);
+
+    border-radius: 12px;
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+
+.value-card {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border: 1px solid #d9e2ec;
+    border-radius: 10px;
+}
+
+.value-card h3 {
+    margin-top: 0;
+    color: #168c59;
+}
+
+.value-card:hover {
+    border-color: #168c59;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Meet the team link */
+
+.mtt {
+    text-decoration: none;
+    background-color: #168c59;
+    color: #ffffff;
+    padding: 0.7em 1.1em;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.mtt:hover {
+    background-color: #0b5c3b;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   5. Tables
+   Used by index.html and about.html
+   ========================================= */
+
+.table-wrap {
+    overflow-x: auto;
+    margin: 1.5em 0;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.data-table caption {
+    font-weight: bold;
+    padding: 0.8em;
+    color: #0b2c5f;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid #ccd6dd;
+    padding: 0.8em;
+    text-align: left;
+}
+
+.data-table thead {
+    background-color: #0b2c5f;
+    color: #ffffff;
+}
+
+.data-table thead th {
+    color: #ffffff;
+}
+
+.data-table tbody tr:hover {
+    background-color: #eef7f1;
+}
+
+
+/* =========================================
+   6. Home page call to action
+   ========================================= */
+
+.home-cta {
+    background-color: #0b2c5f;
+    color: #ffffff;
+    padding: 2em;
+    margin: 2em 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.home-cta h2 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.home-cta a {
+    display: inline-block;
+    background-color: #168c59;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8em 1.3em;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.home-cta a:hover {
+    background-color: #20a56b;
+}
+
+.acknowledgement {
+    background-color: #eef7f1;
+    border-left: 5px solid #168c59;
+    padding: 1.5em;
+    margin: 2em 0;
+    border-radius: 6px;
+}
+
+.acknowledgement h2 {
+    margin-top: 0;
+}
+
+
+/* =========================================
+   Jobs Page
+   ========================================= */
+
+.jobs-layout {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+.jobs-content {
+    flex: 3;
+}
+
+.jobs-content > h2 {
+    color: #0b2c5f;
+    margin-top: 0;
+}
+
+
+/* =========================================
+   Job Cards
+   ========================================= */
+
+.job-card {
+    background-color: #ffffff;
+
+    border: 2px solid #168c59;
+    border-radius: 10px;
+
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+}
+
+.job-card:hover {
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Job title and reference number */
+
+.job-heading {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1em;
+
+    margin-bottom: 1em;
+}
+
+.job-heading h3 {
+    color: #0b2c5f;
+
+    font-size: 1.5em;
+
+    margin: 0;
+}
+
+
+/* Blue reference number bubble */
+
+.job-ref {
+    background-color: #0b2c5f;
+    color: #ffffff;
+
+    padding: 0.35em 0.9em;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+    font-size: 0.9em;
+
+    white-space: nowrap;
+}
+
+
+.job-card h4 {
+    color: #168c59;
+
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.job-card p {
+    margin-bottom: 1em;
+}
+
+
+.job-card ul {
+    padding-left: 1.5em;
+}
+
+
+.job-card li {
+    margin-bottom: 0.4em;
+}
+
+
+/* =========================================
+   Apply Button
+   ========================================= */
+
+.apply-button {
+    display: inline-block;
+
+    background-color: #168c59;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 0.7em 1.2em;
+
+    margin-top: 1em;
+
+    border-radius: 6px;
+}
+
+
+.apply-button:hover {
+    background-color: #0b5c3b;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   Jobs Aside
+   ========================================= */
+
+.jobs-aside {
+    width: 30%;
+
+    flex-shrink: 0;
+
+    background-color: #eef7f1;
+
+    border: 2px solid #168c59;
+    border-radius: 10px;
+
+    padding: 1.5em;
+
+    margin-top: 3.5em;
+}
+
+
+.jobs-aside h2 {
+    color: #0b2c5f;
+    margin-top: 0;
+}
+
+
+.jobs-aside h3 {
+    color: #0b2c5f;
+    margin-top: 1.5em;
+}
+
+
+.jobs-aside ul,
+.jobs-aside ol {
+    padding-left: 1.5em;
+}
+
+
+.jobs-aside li {
+    margin-bottom: 0.5em;
+}
+
+
+/* Inclusive employment box */
+
+.inclusive-note {
+    margin-top: 1.5em;
+
+    background-color: #ffffff;
+
+    padding: 1em;
+
+    border-left: 5px solid #168c59;
+    border-radius: 6px;
+}
+
+
+.inclusive-note h3 {
+    margin-top: 0;
+}
+
+
+/* =========================================
+   Jobs Responsive Design
+   ========================================= */
+
+@media screen and (max-width: 900px) {
+
+    .jobs-layout {
+        flex-direction: column;
+    }
+
+    .jobs-content {
+        width: 100%;
+    }
+
+    .jobs-aside {
+        width: 100%;
+        margin-top: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .job-card {
+        padding: 1em;
+    }
+
+    .job-heading {
+        align-items: flex-start;
+    }
+
+    .job-heading h3 {
+        font-size: 1.3em;
+    }
+
+    .job-ref {
+        font-size: 0.8em;
+    }
+
+    .apply-button {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* =========================================
+   9. Application page
+   ========================================= */
+
+.form-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    color: #0b2c5f;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+/* Form uses Flexbox */
+
+.form-row {
+    display: flex;
+    gap: 1.5em;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 1.3em;
+}
+
+.form-group label,
+.form-group legend {
+    font-weight: bold;
+    color: #0b2c5f;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75em;
+
+    margin-top: 0.3em;
+
+    border: 1px solid #aab8c2;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 1em;
+
+    background-color: #ffffff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(22, 140, 89, 0.2);
+    border-color: #168c59;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* Required symbol */
+
+.required {
+    color: #b00020;
+}
+
+
+/* Small help text */
+
+.hint {
+    display: block;
+    color: #5c6770;
+    margin-top: 0.25em;
+}
+
+
+/* Gender and skills fieldsets */
+
+fieldset {
+    border: 1px solid #ccd6dd;
+    border-radius: 6px;
+    padding: 1em;
+}
+
+.gender-group,
+.skills-group {
+    margin-bottom: 1.3em;
+}
+
+
+/* Radio buttons */
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.radio-option input {
+    width: auto;
+    margin: 0;
+}
+
+
+/* Skill list uses CSS Grid */
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8em;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.checkbox-option input {
+    width: auto;
+    margin: 0;
+}
+
+
+/* Submit and reset buttons */
+
+.submit-group {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.submit-btn,
+.reset-btn {
+    border: none;
+    border-radius: 6px;
+
+    padding: 0.8em 1.4em;
+
+    font-size: 1em;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #168c59;
+    color: #ffffff;
+}
+
+.submit-btn:hover {
+    background-color: #0b5c3b;
+}
+
+.reset-btn {
+    background-color: #e3e8ec;
+    color: #1f2d3d;
+}
+
+.reset-btn:hover {
+    background-color: #ccd6dd;
+}
+
+
+/* =========================================
+   10. About page
+   ========================================= */
+
+.about-hero {
+    background-color: #eef7f1;
+    padding: 2.5em 0;
+    border-bottom: 1px solid #cfe5d6;
+}
+
+.about-hero h1 {
+    margin-top: 0;
+    font-size: 2.2em;
+}
+
+.section {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+
+/* Group nested list */
+
+.team-nested-list {
+    background-color: #ffffff;
+    border-left: 5px solid #168c59;
+    padding: 1.3em 1.3em 1.3em 2.5em;
+    border-radius: 6px;
+}
+
+
+/* Member contributions */
+
+.contribution-list {
+    background-color: #ffffff;
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+    padding: 1.5em;
+}
+
+.contribution-list dt {
+    font-weight: bold;
+    color: #0b2c5f;
+    margin-top: 1em;
+}
+
+.contribution-list dt:first-child {
+    margin-top: 0;
+}
+
+.contribution-list dd {
+    margin: 0.3em 0 1em 1.5em;
+}
+
+
+/* Student IDs */
+
+.student-id {
+    color: #168c59;
+    font-family: monospace;
+    background-color: #eef7f1;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+}
+
+
+/* Member quotes */
+
+.quote-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.member-quote {
+    margin: 0;
+    padding: 1.3em;
+
+    background-color: #ffffff;
+
+    border-left: 4px solid #168c59;
+    border-radius: 6px;
+}
+
+.member-quote .original {
+    color: #0b5c3b;
+    font-weight: bold;
+}
+
+.member-quote footer {
+    margin-top: 0.8em;
+    font-size: 0.9em;
+    color: #5c6770;
+}
+
+
+/* Group figure */
+
+.team-figure {
+    margin: 1.5em auto;
+    background-color: #ffffff;
+    padding: 1em;
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+}
+
+.team-figure img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.team-figure figcaption {
+    text-align: center;
+    padding-top: 0.7em;
+    font-size: 0.9em;
+    color: #5c6770;
+}
+
+
+/* About page table */
+
+.fun-facts tbody tr:hover {
+    background-color: #dff3e7;
+}
+
+.fun-fact-figure {
+    font-weight: bold;
+    color: #168c59;
+}
+
+
+/* =========================================
+   11. Footer
+   index.html and jobs.html
+   ========================================= */
+
+body > footer:not(.site-footer) {
+    background-color: #0b2c5f;
+    color: #ffffff;
+    margin-top: 2em;
+    padding-top: 1.5em;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.footer-grid section {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-grid h2 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    text-align: center;
+    padding: 1em;
+    margin: 1em 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================================
+   12. About page footer
+   ========================================= */
+
+.site-footer {
+    background-color: #0b2c5f;
+    color: #ffffff;
+    padding: 2em 0 0;
+}
+
+.site-footer .wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.site-footer h4 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer a {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1em;
+    margin: 1.5em 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================================
+   13. Responsive design
+   Tablets
+   ========================================= */
+
+@media screen and (max-width: 900px) {
+
+    .jobs-layout {
+        flex-direction: column;
+    }
+
+    .jobs-aside {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .checkbox-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quote-list {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer .wrap {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   14. Responsive design
+   Mobile phones
+   ========================================= */
+
+@media screen and (max-width: 600px) {
+
+    .container,
+    .wrap {
+        width: 94%;
+    }
+
+    main {
+        padding: 1em 0;
+    }
+
+    .header-flex,
+    .site-header .wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .branding h1 {
+        font-size: 1.3em;
+    }
+
+    .logo {
+        width: 55px;
+    }
+
+    .nav-menu,
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu li,
+    .main-nav li {
+        width: 100%;
+    }
+
+    .nav-menu a,
+    .main-nav a {
+        width: 100%;
+    }
+
+    .page-intro {
+        padding: 1.2em;
+    }
+
+    .job-card {
+        padding: 1.1em;
+    }
+
+    .form-container {
+        width: 94%;
+        padding: 1.2em;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-group {
+        flex-direction: column;
+    }
+
+    .submit-group {
+        flex-direction: column;
+    }
+
+    .submit-btn,
+    .reset-btn {
+        width: 100%;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+    }
+}
