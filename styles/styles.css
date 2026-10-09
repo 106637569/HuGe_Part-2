@@ -72,13 +72,14 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 1em;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .branding {
     display: flex;
     align-items: center;
     gap: 1em;
+    min-width: 0;
 }
 
 .logo {
@@ -86,9 +87,11 @@ header {
     height: auto;
 }
 
-.branding h1 {
+.site-title {
     margin: 0;
     font-size: 1.8em;
+    font-weight: bold;
+    white-space: nowrap;
     color: #0b2c5f;
 }
 
@@ -108,6 +111,7 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: nowrap;
     gap: 0.5em;
 }
 
@@ -138,6 +142,7 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+.page-intro h1,
 .page-intro h2 {
     margin-top: 0;
     font-size: 2em;
@@ -478,53 +483,6 @@ header {
 
 
 /* =========================================
-   Jobs Responsive Design
-   ========================================= */
-
-@media screen and (max-width: 900px) {
-
-    .jobs-layout {
-        flex-direction: column;
-    }
-
-    .jobs-content {
-        width: 100%;
-    }
-
-    .jobs-aside {
-        width: 100%;
-        margin-top: 0;
-    }
-
-}
-
-
-@media screen and (max-width: 600px) {
-
-    .job-card {
-        padding: 1em;
-    }
-
-    .job-heading {
-        align-items: flex-start;
-    }
-
-    .job-heading h3 {
-        font-size: 1.3em;
-    }
-
-    .job-ref {
-        font-size: 0.8em;
-    }
-
-    .apply-button {
-        width: 100%;
-        text-align: center;
-    }
-
-}
-
-/* =========================================
    9. Application page
    ========================================= */
 
@@ -795,6 +753,15 @@ fieldset {
     font-weight: bold;
 }
 
+.member-quote .translation {
+    margin: 0.6em 0 0;
+}
+
+.member-quote .lang-label {
+    font-size: 0.85em;
+    color: #5c6770;
+}
+
 .member-quote footer {
     margin-top: 0.8em;
     font-size: 0.9em;
@@ -934,6 +901,10 @@ body > footer:not(.site-footer) {
 
 @media screen and (max-width: 900px) {
 
+    .jobs-content {
+        width: 100%;
+    }
+
     .jobs-layout {
         flex-direction: column;
     }
@@ -983,7 +954,7 @@ body > footer:not(.site-footer) {
         align-items: flex-start;
     }
 
-    .branding h1 {
+    .site-title {
         font-size: 1.3em;
     }
 
@@ -1015,6 +986,23 @@ body > footer:not(.site-footer) {
         padding: 1.1em;
     }
 
+    .job-heading {
+        align-items: flex-start;
+    }
+
+    .job-heading h3 {
+        font-size: 1.3em;
+    }
+
+    .job-ref {
+        font-size: 0.8em;
+    }
+
+    .apply-button {
+        width: 100%;
+        text-align: center;
+    }
+
     .form-container {
         width: 94%;
         padding: 1.2em;
@@ -1044,5 +1032,185 @@ body > footer:not(.site-footer) {
 
     .footer-grid {
         flex-direction: column;
+    }
+}
+
+/* =========================================
+   Accessibility: visible keyboard focus for all links and buttons
+   ========================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #0b2c5f;
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   Burger menu (CSS only, no JavaScript)
+   Hidden on desktop and tablet; shown at 600px and below
+   ========================================= */
+
+.nav-toggle,
+.nav-toggle-label {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+
+    .header-flex {
+        position: relative;
+    }
+
+    .branding {
+        padding-right: 3.5em;
+    }
+
+    nav[aria-label="Main navigation"] {
+        width: 100%;
+    }
+
+    /* the checkbox stays in the page (so keyboards can reach it) but is invisible */
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 0.4em;
+        right: 0;
+        width: 3em;
+        height: 3em;
+        margin: 0;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .nav-toggle-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0.4em;
+        right: 0;
+        width: 3em;
+        height: 3em;
+        border: 2px solid #0b2c5f;
+        border-radius: 6px;
+        background-color: #ffffff;
+    }
+
+    /* three bars drawn with one element plus its two pseudo-elements */
+    .burger-bars,
+    .burger-bars::before,
+    .burger-bars::after {
+        display: block;
+        width: 1.5em;
+        height: 3px;
+        background-color: #0b2c5f;
+        border-radius: 2px;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .burger-bars {
+        position: relative;
+    }
+
+    .burger-bars::before,
+    .burger-bars::after {
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+
+    .burger-bars::before {
+        top: -0.5em;
+    }
+
+    .burger-bars::after {
+        top: 0.5em;
+    }
+
+    /* open state: bars turn into an X */
+    .nav-toggle:checked + .nav-toggle-label .burger-bars {
+        background-color: transparent;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label .burger-bars::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle:checked + .nav-toggle-label .burger-bars::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .nav-toggle:focus-visible + .nav-toggle-label {
+        outline: 3px solid #0b2c5f;
+        outline-offset: 2px;
+    }
+
+    /* menu is hidden until the checkbox is ticked */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0.5em;
+    }
+
+    .nav-toggle:checked ~ .nav-menu {
+        display: flex;
+    }
+}
+
+
+/* =========================================
+   Responsive branding
+   Tablet and smaller: hide the tagline and "Financial Technologies",
+   leaving only the logo and "HuGe" so the nav stays on one row
+   ========================================= */
+
+@media screen and (max-width: 950px) {
+
+    .brand-extra,
+    .tagline {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 950px) {
+
+    .site-title {
+        font-size: 1.6em;
+    }
+}
+
+
+/* =========================================
+   Phones: plenty of room beside the burger button, so show the full
+   company name again (tagline stays hidden) and let the title wrap
+   ========================================= */
+
+@media screen and (max-width: 600px) {
+
+    .brand-extra {
+        display: inline;
+    }
+
+    .site-title {
+        white-space: normal;
+        font-size: 1.15em;
+        line-height: 1.25;
     }
 }
