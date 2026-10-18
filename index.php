@@ -1,0 +1,115 @@
+<?php
+$page_title = 'HuGe | Careers in Financial Technology';
+$current_page = 'index.php';
+$extra_head = '<meta name="description" content="HuGe is a financial technology company building clear, secure tools for everyday money. Explore current vacancies and apply today.">' . PHP_EOL .
+              '<!-- GenAI acknowledgement: page structure, wireframe and CSS drafted with the assistance of Claude (Anthropic). Content, job details and final edits reviewed and adapted by the group. -->';
+include 'header.inc';
+?>
+
+<main class="container">
+        <!-- Hero -->
+        <section class="page-intro">
+          <h1>Building the Future of Digital Finance</h1>
+            <p>
+              HuGe is a financial technology company based in Melbourne. We design and maintain secure, user-friendly
+              platforms for digital payments, personal budgeting, account management and financial education. Our
+              products are used by individuals, students and small businesses who want to understand their money without
+              needing a finance degree to do it.
+            </p>
+            <p>
+              We're a small team that cares about doing precise, well-tested work. The kind of work that makes people trust
+              with their pay cheque. If that sounds like the sort of place you'd like to build your career, take a look
+              at our current vacancies.
+            </p>
+            <img src="images/thegang.jpeg"
+              alt="The HuGe team gathered together in the office"
+              style="display: block; margin: 1.5rem auto 0; width: 100%; max-width: 480px; border: 1px solid #dfe6e1;" 
+              />
+            <a class="mtt"
+              href="about.php"
+              style="display: block; width: fit-content; margin: 1rem auto 0;">
+                Meet the team
+            </a>
+        </section>  
+        <!-- What we build -->
+        <section class="home-section">
+          <div class="wrap">
+            <h2>What we build</h2>
+            <div class="value-grid">
+              <div class="value-card">
+                <h3>Payments</h3>
+                <p>Fast, secure transfers between accounts, cards and digital wallets, built on top of bank-grade
+                  encryption.</p>
+              </div>
+              <div class="value-card">
+                <h3>Budgeting</h3>
+                <p>Tools that turn transaction history into a plain-language picture of where money is going.</p>
+              </div>
+              <div class="value-card">
+                <h3>Financial education</h3>
+                <p>Short, practical guides and calculators that explain concepts like interest and compounding in
+                  everyday language.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Product line and pricing -->
+        <div class="wrap">
+          <h2>Product line and current pricing</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <caption>HuGe product tiers and inclusions (updated quarterly)</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Plan</th>
+                  <th scope="col">Monthly fee</th>
+                  <th scope="col" colspan="2">Included features</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Starter</th>
+                  <td>Free</td>
+                  <td>Budget tracking</td>
+                  <td>Email support</td>
+                </tr>
+                <tr>
+                  <th scope="row">Plus</th>
+                  <td>$4.99</td>
+                  <td colspan="2">Budget tracking, bill reminders and priority support</td>
+                </tr>
+                <tr>
+                  <th scope="row">Business</th>
+                  <td>$14.99</td>
+                  <td>Multi-account payments</td>
+                  <td>Dedicated account manager</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Call to action -->
+        <section class="home-cta">
+            <h2>Join the Team</h2>
+            <p>
+                Take a look at our current openings and find a role that
+                matches your skills.
+            </p>
+            <p>
+                <a href="jobs.php">View open positions</a>
+            </p>
+        </section>
+        <section class="wrap">
+          <div class="acknowledgement">
+            <h2>Acknowledgement of Country</h2>
+            <p>HuGe acknowledges the Traditional Owners of the lands on which we work, including the Wurundjeri People of
+              the Kulin Nation in Melbourne, and recognises their continuing connection to land, waters and community. We
+              pay our respects to Elders past and present, and extend that respect to all Aboriginal and Torres Strait
+              Islander colleagues, applicants and customers. We are committed to building an inclusive workplace and
+              welcome applications from Aboriginal and Torres Strait Islander peoples for all roles advertised on this
+              site.</p>
+          </div>
+        </section>
+    </main>
+
+<?php include 'footer.inc'; ?>
