@@ -6,6 +6,7 @@ $links = [
     'jobs.php'  => 'Jobs',
     'apply.php' => 'Apply',
     'about.php' => 'About',
+    'login.php' => 'Login'
 ];
 ?>
             <nav aria-label="Main navigation">
