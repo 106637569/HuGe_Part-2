@@ -20,6 +20,8 @@ function print_job_list($text)
     }
 }
 
+<!-- GenAI acknowledgement: page structure, wireframe and CSS drafted with the assistance of ChatGPT (Anthropic). Content, details and final edits reviewed and adapted by the group. -->
+
 $search = '';
 if (isset($_GET['search']) && !is_array($_GET['search'])) {
     $search = trim($_GET['search']);
@@ -52,7 +54,7 @@ if (!$conn) {
 
     $stmt = mysqli_prepare($conn, $sql);
     
-// I got help with AI with this part of the code. I was not sure how to bind the parameters for the prepared statement, so I used AI to help me with that.
+
     if (!$stmt) {
         $db_error = 'The job search could not be prepared.';
     } else {
