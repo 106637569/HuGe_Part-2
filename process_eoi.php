@@ -58,7 +58,7 @@ function esc($text)
     return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
 }
 
-$jobRef    = strtoupper(clean($_POST['jobRef']));   // e.g. hgf101 -> HGF101
+$jobRef    = strtoupper(clean($_POST['jobRef']));
 $firstName = clean($_POST['firstName']);
 $lastName  = clean($_POST['lastName']);
 $dob       = clean($_POST['dob']);
@@ -311,7 +311,7 @@ if (count($errors) == 0) {
     }
 }
 
-// Tell the browser what happened (422 = bad data, 500 = our problem)
+// Tell the browser what happened
 if ($page == 'errors') {
     http_response_code(422);
 } elseif ($page == 'failure') {
