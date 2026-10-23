@@ -67,8 +67,8 @@ VALUES
     '106511359',
     'Led development of apply.html, the application form and the form layout.',
     'TO UPDATE: add Jacob''s final Part 2 contribution.',
-    '[ADD MAORI QUOTE HERE]',
-    'Cast away your fears and elevate to success.',
+    'Kia Kaha, Kia Maia, Kia Manawanii',
+    'Be Strong, Be Brave, Be Steadfast',
     'mi',
     'Maori',
     'The capital city in Palau has an official permanent population of 0.'
