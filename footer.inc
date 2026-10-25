@@ -18,7 +18,7 @@
                     <a href="https://loolsinhak.atlassian.net/jira/software/projects/HUGE/boards/36?filter=&groupBy=none&atlOrigin=eyJpIjoiY2U0YTI4OTQyZjMxNDU3YTk3YmVjM2NkNTJiMGJhMjkiLCJwIjoiaiJ9" target="_blank" rel="noopener noreferrer">Jira Project</a>
                 </li>
                 <li>
-                    <a href="https://github.com/106637569/HuGe" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                    <a href="https://github.com/106637569/HuGe_Part-2" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
                 </li>
             </ul>
         </section>
