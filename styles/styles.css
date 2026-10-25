@@ -1048,6 +1048,44 @@ textarea:focus-visible {
     outline-offset: 2px;
 }
 
+/* =========================================
+   EOI result page (process_eoi.php)
+   ========================================= */
+
+/* Success: thank-you line */
+.eoi-result .eoi-lead {
+    font-size: 1.15em;
+}
+
+/* Success: the EOI number box */
+.eoi-result .eoi-number {
+    background-color: #eaf4ee;
+    border-left: 5px solid #206d4d;
+    border-radius: 6px;
+    padding: 0.8em 1em;
+    font-size: 1.2em;
+}
+
+/* Errors: the list of problems */
+.eoi-errors {
+    background-color: #fdf0ef;
+    border-left: 5px solid #b3261e;
+    border-radius: 6px;
+    padding: 1em 1em 1em 2.2em;
+}
+
+.eoi-errors li {
+    margin: 0.3em 0;
+}
+
+/* Button row at the bottom ("Back to ...") */
+.eoi-actions {
+    margin-top: 1.5em;
+}
+
+.eoi-actions .apply-button {
+    display: inline-block;
+}
 
 /* =========================================
    Burger menu (CSS only, no JavaScript)
