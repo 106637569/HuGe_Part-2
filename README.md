@@ -54,8 +54,7 @@ Database settings are in `settings.php`: host `localhost`, user `root`, no passw
 
 ## Acknowledgements
 
-**GenAI use:** Claude (Anthropic) was used to [what it helped with, for example: draft the
-validation code, explain PHP concepts, review the login page]. All code was reviewed, tested
+**GenAI use:** Claude (Anthropic) was used to draft the website, help explain concepts on php and part of the css. All code was reviewed, tested
 and adapted by the group.
 
 ## Links
