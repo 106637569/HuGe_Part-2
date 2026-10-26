@@ -77,7 +77,8 @@ VALUES
     'Chandara Yoeun',
     '106195915',
     'Led development of about.html, project coordination in Jira and accessibility across the site.',
-    'TO UPDATE: add Chandara''s final Part 2 contribution.',
+    'Led  PHP login and logout system, worked on user authentication and session management, setting up the users database and testing and 
+     fixing errors in the PHP files .',
     'ចេះមួយសាងមួយ ចេះពីរសាងពីរ',
     'Know one thing, build one thing; know two, build two.',
     'km',
