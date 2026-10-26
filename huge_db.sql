@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 26, 2026 at 05:57 AM
+-- Generation Time: Oct 26, 2026 at 11:53 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -137,7 +137,7 @@ CREATE TABLE `team_members` (
 INSERT INTO `team_members` (`member_id`, `member_name`, `student_id`, `part1_contribution`, `part2_contribution`, `quote_original`, `quote_translation`, `quote_lang`, `quote_language`, `fun_fact`) VALUES
 (1, 'Sinhak Lor', '106637569', 'Led development of index.html and the home page CSS, including the product table and Acknowledgement of Country section.', 'Built the shared PHP includes (header.inc, nav.inc, footer.inc) and settings.php for the database connection. Created the eoi table, and wrote process_eoi.php to validate all form data on the server.', 'តក់ៗពេញបំពង់។', 'Drop by drop, fills the bucket.', 'km', 'Khmer', 'Sleep acts like a save button, turning short-term memories into long-term ones.'),
 (2, 'Marco Tan', '102838708', 'Led development of jobs.html, the job listing content and the styled aside sidebar.', 'Converted the Part 1 HTML pages to PHP and developed the jobs database table, database-driven job listings and PHP job search functionality.', '唔怕行得慢，最怕唔肯行。', 'Don’t be afraid of moving slowly. Be afraid of not moving at all.', 'yue', 'Cantonese', 'Plays airsoft, scuba dives and is a year 4 engineering student doing a year 1 CS unit.'),
-(3, 'Jacob Marulli', '106511359', 'Led development of apply.html, the application form and the form layout.', 'TO UPDATE: add Jacob\'s final Part 2 contribution.', 'Kia Kaha, Kia Maia, Kia Manawanii', 'Be Strong, Be Brave, Be Steadfast', 'mi', 'Maori', 'The capital city in Palau has an official permanent population of 0.'),
+(3, 'Jacob Marulli', '106511359', 'Led development of apply.html, the application form and the form layout.', '', 'Kia Kaha, Kia Maia, Kia Manawanii', 'Be Strong, Be Brave, Be Steadfast', 'mi', 'Maori', 'The capital city in Palau has an official permanent population of 0.'),
 (4, 'Chandara Yoeun', '106195915', 'Led development of about.html, project coordination in Jira and accessibility across the site.', 'Led  PHP login and logout system, worked on user authentication and session management, setting up the users database and testing and fixing errors in the PHP files .', 'ចេះមួយសាងមួយ ចេះពីរសាងពីរ', 'Know one thing, build one thing; know two, build two.', 'km', 'Khmer', 'Watches 5 movies in one day.');
 
 -- --------------------------------------------------------

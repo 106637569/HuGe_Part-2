@@ -3,7 +3,6 @@ require_once 'settings.php';
 
 $page_title = 'About the Team | HuGe';
 $current_page = 'about.php';
-
 $extra_head = '<meta name="description" content="Meet the student team behind the HuGe recruitment website project.">';
 
 /*

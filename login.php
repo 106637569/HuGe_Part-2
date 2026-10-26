@@ -124,7 +124,7 @@ if ($error !== '') {
 }
 
 $page_title   = 'HuGe - Manager Login';
-$current_page = 'manage.php';
+$current_page = 'login.php';
 include 'header.inc';
 ?>
 

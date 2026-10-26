@@ -2,8 +2,12 @@
 
 COS10026 Web Technology Project, Semester 2, 2026
 **Group:** The Big G
-**Members:** Sinhak Lor, 106637569 / Chandara Yoeun, 106195915 
-           / Marco Tan, 102838708 / Jacob Marullu, 106511359
+|**Members** | **ID** |
+|---|---|
+| Sinhak Lor | 106637569 |
+| Chandara Yoeun | 106195915 |
+| Marco Tan | 102838708 |
+| Jacob Marullu | 106511359 | 
 
 A recruitment website for HuGe Financial Technologies, extended from a static
 site (Part 1) into a dynamic PHP and MySQL application.
@@ -54,8 +58,7 @@ Database settings are in `settings.php`: host `localhost`, user `root`, no passw
 
 ## Acknowledgements
 
-**GenAI use:** Claude (Anthropic) was used to draft the website, help explain concepts on php and part of the css. All code was reviewed, tested
-and adapted by the group.
+**GenAI use:** The code for this project was primarily generated with Claude (Anthropic). Group members described what each page or feature needed, Claude wrote the code (including the HTML, CSS, PHP, SQL and the validation and login logic), and members ran it locally, tested it in the browser and database, and asked Claude to fix bugs and make changes. Claude also explained how the code works. Example prompts included "make the header a burger menu when the screen gets small" and "write process_eoi.php that validates the form on the server and stores it in an eoi table".
 
 ## Links
 
