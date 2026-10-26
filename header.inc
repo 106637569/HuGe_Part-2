@@ -1,12 +1,5 @@
 <?php
-/*
- * header.inc - shared <head> + site header. STUB written by Member 2 so the EOI pages run;
- * Member 1 owns the final version.
- * Before including, a page may set:
- *   $page_title   (string)  text for <title>
- *   $current_page (string)  e.g. "apply.php" - highlights the matching nav link
- *   $extra_head   (string)  optional extra markup for <head>
- */
+
 $page_title   = $page_title   ?? 'HuGe Financial Technologies';
 $current_page = $current_page ?? '';
 $extra_head   = $extra_head   ?? '';
@@ -30,7 +23,7 @@ $extra_head   = $extra_head   ?? '';
                      alt="HuGe Financial Technologies logo"
                      class="logo">
                 <div>
-                    <p class="site-title">HuGe<span class="brand-extra"> Financial Technologies</span></p>
+                    <h2 class="site-title">HuGe<span class="brand-extra"> Financial Technologies</span></h2>
                     <p class="tagline">Huge Goals. Huge Growth. HuGe.</p>
                 </div>
             </div>

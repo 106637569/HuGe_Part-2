@@ -44,7 +44,7 @@ VALUES
     'Sinhak Lor',
     '106637569',
     'Led development of index.html and the home page CSS, including the product table and Acknowledgement of Country section.',
-    'TO UPDATE: add Sinhak''s final Part 2 contribution.',
+    'Built the shared PHP includes (header.inc, nav.inc, footer.inc) and settings.php for the database connection. Created the eoi table, and wrote process_eoi.php to validate all form data on the server.',
     'តក់ៗពេញបំពង់។',
     'Drop by drop, fills the bucket.',
     'km',
