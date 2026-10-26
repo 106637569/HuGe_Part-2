@@ -1,4 +1,4 @@
-<?php /* footer.inc - shared footer. STUB by Member 2; Member 1 owns the final version. */ ?>
+<?php /* footer.inc */ ?>
     <!-- Footer -->
 <footer>
     <div class="container footer-grid">

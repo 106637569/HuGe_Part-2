@@ -1,5 +1,5 @@
 <?php
-/* nav.inc - main navigation. STUB by Member 2; Member 1 owns the final version. */
+/* nav.inc - main navigation*/
 $current_page = $current_page ?? '';
 $links = [
     'index.php' => 'Home',
